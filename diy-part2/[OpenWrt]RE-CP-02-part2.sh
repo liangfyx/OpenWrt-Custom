@@ -24,14 +24,14 @@ mod_default_config(){
 
     # C1
     echo
-    echo '[MOD] 修改后台地址为 192.168.199.1'
-    sed -i 's/192.168.1.1/192.168.199.1/w /dev/stdout' package/base-files/files/bin/config_generate
+    # echo '[MOD] 修改后台地址为 192.168.199.1'
+    # sed -i 's/192.168.1.1/192.168.199.1/w /dev/stdout' package/base-files/files/bin/config_generate
 
     echo '[MOD] 修改时区为东八区'
     sed -i "s/'UTC'/'CST-8'\n        set system.@system[-1].zonename='Asia\/Shanghai'/w /dev/stdout" package/base-files/files/bin/config_generate
 
-    echo '[MOD] 修改主机名为 JDC_Mark3'
-    sed -i 's/OpenWrt/JDC_Mark3/w /dev/stdout' package/base-files/files/bin/config_generate
+    echo '[MOD] 修改主机名为 XiaoMi_Mark3'
+    sed -i 's/OpenWrt/XiaoMi_Mark3/w /dev/stdout' package/base-files/files/bin/config_generate
 
     # C2
     echo '[MOD] 修改默认主题为老竭力的 argon'
