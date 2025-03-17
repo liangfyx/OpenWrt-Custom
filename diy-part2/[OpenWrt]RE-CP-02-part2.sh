@@ -72,6 +72,7 @@ target_inf() {
 CONFIG_TARGET_ramips=y
 CONFIG_TARGET_ramips_mt7621=y
 CONFIG_TARGET_ramips_mt7621_DEVICE_jdcloud_re-cp-02=y
+CONFIG_IMAGE_SYSSUPGRADE=y  # 确保启用了 sysupgrade 功能
 EOF
 }
 
